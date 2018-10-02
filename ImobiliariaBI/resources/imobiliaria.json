@@ -51,7 +51,7 @@
         "banheiros": "1",
         "complemento": "Casa",
         "valor_venda": "250000,00",
-        "valor_aluguel": "700,00",
+        "valor_aluguel": "700.00",
         "proprietarioSalario": 3000,
         "proprietarioFilhos": 2,
         "proprietarioSexo": "M",
@@ -86,6 +86,7 @@
         "proprietarioSexo": "M",
         "proprietarioProfissao": "Garçom",
         "proprietarioDeficiente": "nao",
-        "proprietarioClasse_social": "Baixa"
+        "proprietarioClasse_social": "Baixa",
+        "valor_aluguel": "700.00"
     }
 ]

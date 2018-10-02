@@ -452,7 +452,17 @@ function webServer(req, res) {
                         faixa_valor_venda = 3;
                     } else if (objJson.objeto.valor_venda >= 100001) {
                         faixa_valor_venda = 4;
-                    }                    
+                    }                 
+                    
+                    if (objJson.objeto.valor_aluguel <= 500) {
+                        faixa_valor_aluguel = 1;
+                    } else if (objJson.objeto.valor_aluguel >= 501 && objJson.objeto.valor_aluguel <= 1000) {
+                        faixa_valor_aluguel = 2;
+                    } else if (objJson.objeto.valor_aluguel >= 1001 && objJson.objeto.valor_aluguel <= 2000) {
+                        faixa_valor_aluguel = 3;
+                    } else if (objJson.objeto.valor_aluguel >= 2001) {
+                        faixa_valor_aluguel = 4;
+                    }
                     
                     console.log("\n\nSituação: " + situacao + "\nFaixa Area Total: " + faixa_area_total + "\nFaixa Area Privativa: " + area_privativa + "\nFaixa IPTU: " + faixa_iptu + "\nCondominio: " + condominio + "\nPlanta: " + planta + "\nDependencia: " + dependencia + "\nSacada: " + sacada + "\nPortaria: " + portaria + "\nElevador: " + elevador + "\nChurrasqueira: " + churrasqueira + "\nDomitórios: " + dormitorios + "\nSuites: " + suites + "\nVagas: " + vagas + "\nBanheiros: " + banheiros + "\nComplemento: " + complemento + "\nFaixa Valor Venda: " + faixa_valor_venda + "\n\n");
                     
